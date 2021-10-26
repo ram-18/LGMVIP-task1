@@ -1,0 +1,491 @@
+/* * {box-sizing: border-box} */
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlidesMain {display: none}
+/* img {vertical-align: middle;} */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    height: 650px;
+    position: relative;
+    margin: auto;
+    
+    /* border: 2px solid black; */
+  }
+  .mySlidesMain {
+      width: 100%;
+      height: auto;
+      margin: 0;
+     background-size: cover;
+     /* border: 2px solid red; */
+  }
+  .zippy-box {
+    margin: auto; 
+    /* border: 2px solid black;   */
+    color: white;
+    width: 70%;
+    font-family: sans-serif;
+  }
+  #zippy-para-1 {
+      font-weight: 600;
+      font-size: 50px;
+   }
+   .navbar {
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px;
+   }
+  .navtext {
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+  }
+  .navtext:hover {
+      color:rgb(236, 236, 105);
+  }
+  #sidenav {
+     display: none;
+  }
+ /* Next & previous buttons */
+  .prev1, .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next1 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+   .prev1:hover, .next1:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top: 13%;
+    margin-bottom: 3%;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    /* border: 2px solid black; */
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+
+#about{
+    /* border: 2px solid black; */
+    width: 50%;
+    margin: auto;
+    height: 300px;
+}
+#zippy-about-heading {
+    /* border: 2px solid black; */
+font-size: 40px;
+font-weight: bolder;
+font-family:Arial, Helvetica, sans-serif;
+text-align: center;
+}
+#about-more {
+    /* border: 2px solid black; */
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 5px;
+}
+#img-umbrella{
+    float: right;
+    /* border: 2px solid black; */
+    width: 25%;
+    height: auto;
+    margin: 5px;
+}
+#learn-more {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+.learn-box {
+    /* border: 1px solid red; */
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    height: 350px;
+    margin: 25px;
+}
+#bell-icon {
+    /* border: 2px solid black; */
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+}
+#bell-text {
+    /* border: 2px solid black; */
+    display:inline-block;
+    color: grey;
+}
+#btn-learnmore {
+    background-color: rgb(236, 236, 105); 
+    border: none;
+    color: #6b448f;
+    font-weight: bolder;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-self: center;
+    cursor: pointer;
+  }
+  #btn-learnmore:hover {
+    background-color: #6b448f; 
+    color: white;
+  }
+  .heading-all{
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 800;
+    width: 100%;
+  }
+  #project-box {
+    margin-bottom: 5%; margin-left: 2%; margin-right: 2%; margin-top: 5%;
+  }
+  .project {
+      /* border: 2px solid red; */
+      width: 315px;
+      height: 580px;
+      font-family: sans-serif;
+      background-color: rgb(238, 236, 236);
+      cursor: pointer;
+  }
+  .project:hover {
+      background-color: rgb(236, 236, 105);
+  }
+  #project-2 {
+     background-color: rgb(223, 219, 219); 
+  }
+  #project-2:hover{
+    background-color: rgb(236, 236, 105); 
+  }
+  #project-img{
+      width: 315px;
+      height: 350px;
+      object-fit: cover;
+  }
+  .project-name {
+    font-weight: 800; margin-left: 15px; font-size: 15px;
+  }
+  .project-text {
+    color: grey; margin-left: 15px; font-size: 14px; word-spacing: 1px; line-height: 25px; margin-right: 15px;
+  }
+   .btn-project {
+    background-color: white;
+     border: none;
+    color: #6b448f;
+    font-weight: bolder;
+    padding: 13px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    align-self: center;
+    cursor: pointer;
+    margin-left: 15px;
+  } 
+  .btn-project:hover { 
+    background-color: #6b448f; 
+    color: white;
+  } 
+  #pricing {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+.pricing-box {
+    /* border: 1px solid red; */
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+}
+  .pricing-value {
+      line-height: 20px;
+      font-family: sans-serif;
+  }
+  #pricing-2 {
+    border-left: 1px solid rgb(179, 177, 177); 
+    border-right: 1px solid rgb(185, 182, 182);
+  }
+
+#slider {
+    /* position: absolute; */
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.video-box {
+    /* border: 2px solid yellow;  */
+    width:30%; 
+    height: 300px; 
+    margin: 0 10px 0 10px;
+}
+
+#team-zippy{
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      height: 500%;
+      margin: auto;
+      /* border: 2px solid black;  */
+      font-family: sans-serif;
+  }
+  .people {
+     width: 210px;
+     height: 200px;
+     text-align: center;
+     margin-top: 3%;
+}
+.people-name {
+    font-weight: 900; 
+    font-size: 12px; 
+    margin-bottom: -10px;
+}
+  .people-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: contain;
+    transition: 0.4s ease-out
+  }
+  .people-img:hover{
+    opacity: 1;
+      transform: translateY(2px);
+  }
+  .image-slide {
+      display: none;
+  }
+  .cursor {
+      cursor: pointer;
+  }
+  .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  #newsletter {
+      background-image: url("./images/lanscape-img.jpg.");
+      background-size: 100% 100%;
+      box-sizing: border-box;
+      width: 98%;
+      height: 30%;
+      padding: 30px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+  }
+  #newsletter-heading {
+  color: white;
+   font-weight: bolder; 
+   font-size: 40px; 
+   text-align: center; 
+  font-family: sans-serif;
+  }
+  #news-input {
+      margin-left: 25%;
+      width: 40%;
+      height: 40px;
+      margin-bottom: 6%;
+      font-family: sans-serif;
+      font-size: 18px;
+      padding: 0% 3% 0% 3%;
+      }
+  #news-btn {
+        background-color: rgb(236, 236, 105); /* Green */
+        border: none;
+        color: #6b448f;
+        font-weight: bolder;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display:inline-block;
+        font-size: 16px;
+        /* align-self: center; */
+        cursor: pointer;
+  }
+  #mail-section {
+      padding: 30px;
+      background-color:rgb(79, 168, 190);
+      font-family: sans-serif;
+      width: 46%;
+      font-weight: bolder;
+  }
+  #btn-send {
+    background-color: #5d567e; 
+    border: none;
+    color: white;
+    height: 32px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-self: center;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  #btn-send:hover {
+    background-color: white;
+    color: black;
+  }
+  input {
+      border: none;
+  }
+  .mail-input {
+      height: 25px;
+      width: 300px;
+      margin: 10px;
+  }
+  #bottom {
+      width: 50%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .contact {
+      margin: 40px;
+      color: grey;
+    font-family:sans-serif;
+  }
+
+  @media only screen and (max-width: 770px){ 
+      .navbar {
+          display: none;
+      }
+    #sidenav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 0px 0px;
+        display: block;
+        transition: width 2s; 
+    }
+    #sidenav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin: 10px 30px;
+        padding: 20px;
+         display: block; 
+     }
+    #sidenav a:hover{
+        background: red;
+    }
+    #menubar{
+        position: fixed;
+        top: 20px;
+        left: 10px;
+        width: 50px;
+        cursor: pointer;
+    }
+    #about {
+      margin-top: 35%;
+    }
+    #pricing-2 {
+          border-top: 1px solid rgb(184, 181, 181);
+          border-bottom: 1px solid rgb(184, 181, 181);
+         border-left: none;
+         border-right: none;
+      }
+      .video-box {
+          width: 100%;
+      }
+      #news-input {
+          margin-left: 10%;
+          width: 70%;
+      }
+      #mail-section {
+          width: 100%;
+      }
+      #news-btn {
+     margin-left: 35%;
+      }
+  }
